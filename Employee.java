@@ -1,51 +1,54 @@
-package day10;
+package day14;
 
 public class Employee {
-
-	private String empName;
-	private int empAge;
-	private long empPhoneNo;
-    private String empDepartment;
-    
-    public Employee() {
+	private int id;
+	private String name;
+	private long phoneNo;
+	private String department;
+	public Employee() {
+		
+	}
+	public Employee(int id, String name, long phoneNo, String department) {
+		
+		this.id = id;
+		this.name = name;
+		this.phoneNo = phoneNo;
+		this.department = department;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public long getPhoneNo() {
+		return phoneNo;
+	}
+	public void setPhoneNo(long phoneNo) {
+		this.phoneNo = phoneNo;
+	}
+	public String getDepartment() {
+		return department;
+	}
+	public void setDepartment(String department) {
+		this.department = department;
+	}
+	@Override
+	public String toString() {
+		return "Employee [id=" + id + ", name=" + name + ", phoneNo=" + phoneNo + ", department=" + department + "]";
+	}
 	
-}
-    
-public Employee(String empName,int empAge,long empPhoneNo,String empDepartment) {
- this.empName=empName;
- this.empAge=empAge;
- this.empPhoneNo=empPhoneNo;
- this.empDepartment=empDepartment;
-}
-public void setEmpName(String empName) {
-	this.empName=empName;	
-}
-public void setEmpAge(int empAge) {
-	this.empAge=empAge;
-}
-public void setEmpPhoneNo(long empPhoneNo) {
-	this.empPhoneNo=empPhoneNo;
-}
-public void setEmpDepartment(String empDepartment) {
-	this.empDepartment=empDepartment;
-}
- public  String getEmpName() {
-	return empName;
- }
- public int getEmpAge() {
-	 return empAge;
- }
- public long getEmpPhoneNo() {
-	 return empPhoneNo;
- }
- public String getEmpDepartment() {
-	 return empDepartment;
- }
-	 
-	 public String toString() {
-		 return "your Name :"+empName+"\nYour Age :"+empAge+"\nYour PhoneNo :"+empPhoneNo+"\nYour Department :"+empDepartment;
-	 }
- }
-		 
+	
+	
+	
+	
 	
 
+ 
+}
